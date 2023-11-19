@@ -1,3 +1,39 @@
 html body {
     background-color: #381d16; !important;
+
+}
+/*changed the text from white to black for visibility*/
+.form-control{
+    color: black !important;
+}
+.navbar-nav .nav-link {
+    color: black !important;
+}
+
+.btn{
+    color: black !important;
+}
+.card-img{
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.card-img-overlay{
+    position: relative;
+    z-index: 2
+}
+
+.card {
+    font-family: 'Agbalumo', sans-serif;
+    height: 100vh;
 }
