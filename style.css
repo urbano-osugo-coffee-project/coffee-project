@@ -13,6 +13,10 @@ html body {
 .btn{
     color: black !important;
 }
+.container {
+    position: relative;
+    z-index: 2;
+}
 .card-img{
     width: 100%;
     height: auto;
@@ -36,4 +40,28 @@ html body {
 .card {
     font-family: 'Agbalumo', sans-serif;
     height: 100vh;
+}
+
+/*tried moving button to the right*/
+/*.btn-primary{*/
+/*    display: flex;*/
+/*    flex-grow: 1;*/
+/*}*/
+
+/*limits the image height and covers the selected area*/
+.card-img-top {
+    width: 100%;
+    max-height: 140px;
+    object-fit: cover;
+}
+
+/*transition card and center it*/
+.card {
+    transition: transform .2s;
+    margin: 0 auto;
+    background-color: black !important;
+}
+.card:hover {
+    transform: scale(1.02);
+    background-color: black !important;
 }
