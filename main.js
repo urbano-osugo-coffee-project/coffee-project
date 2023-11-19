@@ -80,7 +80,7 @@ const coffees = [
 // Function to render a coffee as a div
 function renderCoffee(coffee) {
     return `
-        <div class="coffee">
+        <div class="coffee d-flex flex-row col-lg-6 mb-4">
             <h3>${coffee.name}</h3>
             <p>${coffee.roast}</p>
         </div>
@@ -145,3 +145,27 @@ addCoffeeForm.addEventListener('submit', function (e) {
 
 // Initialize the roast selection with all
 roastSelection.value = 'all';
+
+
+
+function updateFontColor() {
+    // Get all elements containing text
+    const textElements = document.querySelectorAll('*:not(script):not(style):not(link):not(meta)'); // Exclude certain elements like scripts, styles, links, and meta tags
+
+    // Loop through the text elements and update font color
+    textElements.forEach(element => {
+        element.style.color = '#f5f5f5';
+    });
+}
+
+// Call the function to update font color
+updateFontColor();
+
+// Select all headings and titles you want to style with Dancing Script
+const headingsAndTitles = document.querySelectorAll('h1, h2, h3, h4, h5, h6, .title-class, .other-title-class');
+
+// Apply the "Dancing Script" font to the selected elements
+headingsAndTitles.forEach(element => {
+    element.style.fontFamily = 'Dancing Script, cursive';
+});
+
