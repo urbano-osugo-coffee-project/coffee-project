@@ -80,6 +80,7 @@ html body {
 .header-title {
     margin: auto;
     padding-top: 70px;
+    font-size: 10vw; !important;
 }
 
 .form-spacing {
@@ -91,6 +92,9 @@ html body {
 margin-top: 15%;
     font-size: 1.5vw;
     margin-left: 60%;
+}.header-para{
+margin-top: 7%;
+    font-size: 2vw;
 }
 
 
