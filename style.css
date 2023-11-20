@@ -1,23 +1,28 @@
 html body {
-    background-color: #381d16; !important;
+    background-color: #381d16;
+!important;
 
 }
+
 /*changed the text from white to black for visibility*/
-.form-control{
+.form-control {
     color: black !important;
 }
+
 .navbar-nav .nav-link {
     color: black !important;
 }
 
-.btn{
+.btn {
     color: black !important;
 }
+
 .container {
     position: relative;
     z-index: 2;
 }
-.card-img{
+
+.card-img {
     width: 100%;
     height: auto;
 }
@@ -32,7 +37,7 @@ html body {
     z-index: 1;
 }
 
-.card-img-overlay{
+.card-img-overlay {
     position: relative;
     z-index: 2
 }
@@ -61,7 +66,23 @@ html body {
     margin: 0 auto;
     background-color: black !important;
 }
+
 .card:hover {
     transform: scale(1.02);
     background-color: black !important;
+}
+
+.header-title {
+    margin: auto;
+    padding-top: 70px;
+}
+
+.form-spacing {
+    position: absolute;
+    width: 200px;
+
+}
+.header-paragraph{
+margin-top: 20%;
+    font-size: 2vw;
 }
