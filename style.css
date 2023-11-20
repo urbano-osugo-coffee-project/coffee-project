@@ -47,11 +47,16 @@ html body {
     height: 100vh;
 }
 
-/*tried moving button to the right*/
-/*.btn-primary{*/
-/*    display: flex;*/
-/*    flex-grow: 1;*/
-/*}*/
+
+.card-text{
+    font-size: 2rem;
+    color: ghostwhite !important;
+}
+
+.card-title{
+    font-family: 'Dancing Script', cursive;
+    color: ghostwhite !important;
+}
 
 /*limits the image height and covers the selected area*/
 .card-img-top {
@@ -83,8 +88,9 @@ html body {
 
 }
 .header-paragraph{
-margin-top: 20%;
-    font-size: 2vw;
+margin-top: 15%;
+    font-size: 1.5vw;
+    margin-left: 60%;
 }
 
 
