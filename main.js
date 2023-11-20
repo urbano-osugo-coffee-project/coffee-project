@@ -61,28 +61,34 @@
 
 // Coffee data
 const coffees = [
-    { id: 1, name: 'Light City', roast: 'light' },
-    { id: 2, name: 'Half City', roast: 'light' },
-    { id: 3, name: 'Cinnamon', roast: 'light' },
-    { id: 4, name: 'City', roast: 'medium' },
-    { id: 5, name: 'American', roast: 'medium' },
-    { id: 6, name: 'Breakfast', roast: 'medium' },
-    { id: 7, name: 'High', roast: 'dark' },
-    { id: 8, name: 'Continental', roast: 'dark' },
-    { id: 9, name: 'New Orleans', roast: 'dark' },
-    { id: 10, name: 'European', roast: 'dark' },
-    { id: 11, name: 'Espresso', roast: 'dark' },
-    { id: 12, name: 'Viennese', roast: 'dark' },
-    { id: 13, name: 'Italian', roast: 'dark' },
-    { id: 14, name: 'French', roast: 'dark' },
+    { id: 1, name: 'Cool Story Brew', roast: 'light' },
+    { id: 2, name: 'Lighthearted latte', roast: 'light' },
+    { id: 3, name: 'BrewHaha Blend', roast: 'light' },
+    { id: 4, name: 'Sip Happens', roast: 'medium' },
+    { id: 5, name: 'Amused Americano', roast: 'medium' },
+    { id: 6, name: 'Mocha Madness', roast: 'medium' },
+    { id: 7, name: 'Espresso Euphoria', roast: 'dark' },
+    { id: 8, name: 'Morbidly Rich Roast', roast: 'dark' },
+    { id: 9, name: 'Mourning Mocha', roast: 'dark' },
+    { id: 10, name: 'Brewed Awakening', roast: 'dark' },
+    { id: 11, name: 'Sip Happens', roast: 'dark' },
+    { id: 12, name: 'Mocha Madness', roast: 'dark' },
+    { id: 13, name: 'Wicked Wake Up', roast: 'dark' },
+    { id: 14, name: 'Cynical Cappuccino', roast: 'dark' },
 ];
 
 // Function to render a coffee as a div
 function renderCoffee(coffee) {
     return `
-        <div class="coffee d-flex flex-row col-lg-6 mb-4">
-            <h3>${coffee.name}</h3>
-            <p>${coffee.roast}</p>
+<!--coffee card-->
+        <div class="col-xs-12 col-sm-12 col-xl-4 col-lg-6 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="../img/coffee.webp" alt="${coffee.name}">
+                <div class="card-body">
+                    <h3 class="card-title">${coffee.name}</h3>
+                    <p class="card-text">${coffee.roast}</p>
+                </div>
+            </div>
         </div>
     `;
 }
