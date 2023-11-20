@@ -86,3 +86,65 @@ html body {
 margin-top: 20%;
     font-size: 2vw;
 }
+
+
+#neubar {
+    background: #fae8d2;
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.4)
+}
+
+.nav-item .active {
+    border-radius: 6px;
+    background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
+    box-shadow:  4px 4px 8px #ddc1a0,
+    -4px -4px 8px #f7e5cc;
+}
+#neubar .dropdown-menu a:hover {
+    color: #454545
+}
+#neubar .nav-item {
+    margin : auto 4px;
+}
+#neubar a {
+
+    padding-left:12px;
+    padding-right:12px;
+}
+#neubar .dropdown-menu {
+    background : #545454
+}
+a.navbar-brand {
+    color: #454545
+}
+
+.coffee-mug {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    background-color: #000;
+    border-radius: 50px 50px 0 0;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.coffee-mug:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: radial-gradient(circle, transparent 10%, #000 10%);
+    top: -30px;
+    left: 70px;
+    border-radius: 50%;
+}
+
+.coffee-steam {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    background: linear-gradient(transparent, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    top: -50px;
+    left: 85px;
+}
