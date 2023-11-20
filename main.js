@@ -1,7 +1,9 @@
 "use strict";
 
 // Coffee data
-const coffees = [
+// Try to load coffees from local storage or set to default if not present
+const coffees = JSON.parse(localStorage.getItem('coffees')) || [
+    // ... (existing array of coffees)
     { id: 1, name: 'Cool Story Brew', roast: 'light' },
     { id: 2, name: 'Lighthearted latte', roast: 'light' },
     { id: 3, name: 'BrewHaha Blend', roast: 'light' },
@@ -69,6 +71,7 @@ roastSelection.addEventListener('change', updateCoffees);
 searchInput.addEventListener('input', updateCoffees);
 
 // Function to add a new coffee to the list
+// Modify the addCoffee function to save the updated array to local storage
 function addCoffee(name, roast) {
     const newCoffee = {
         id: coffees.length + 1,
@@ -76,9 +79,16 @@ function addCoffee(name, roast) {
         roast,
     };
     coffees.push(newCoffee);
+    updateLocalStorage(); // Save the new array to local storage
     coffeeList.innerHTML = renderCoffees(coffees);
     addCoffeeForm.reset();
 }
+function updateLocalStorage() {
+    localStorage.setItem('coffees', JSON.stringify(coffees));
+}
+updateLocalStorage();
+// clear storage
+// localStorage.clear()
 
 // Event listener for the add coffee form submission
 addCoffeeForm.addEventListener('submit', function (e) {
